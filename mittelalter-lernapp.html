@@ -113,13 +113,14 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
   <div class="card">
     <h2>Willkommen! 👋</h2>
     <p>Diese App hilft dir, dich auf die <strong>Mittelalter-Prüfung</strong> vorzubereiten. Alle <strong>Lernziele aus deinem Schulheft</strong> sind hier drin – bei jedem Thema steht oben in der gelben Box, was du können musst.</p>
-    <p>Alle Texte und <strong>Fachbegriffe sind rechtschreiblich korrigiert</strong> (Schweizer Rechtschreibung mit «ss»). Grundlage sind <strong>beide Scans</strong> des Schulhefts (result.pdf und result2.pdf – die zweite Version ist besser lesbar). Unleserliche Stellen habe ich ergänzt und unter <a href="#" onclick="show('korrekturen');return false;">📖 Korrekturen</a> markiert.</p>
+    <p>Alle Texte und <strong>Fachbegriffe sind rechtschreiblich korrigiert</strong> (Schweizer Rechtschreibung mit «ss»). Grundlage sind <strong>beide Scans</strong> des Schulhefts. Fehler im Heft und unsichere Stellen stehen unter <a href="#" onclick="show('korrekturen');return false;">📖 Korrekturen</a>.</p>
     <h3>So lernst du am besten 📅</h3>
     <ol class="tight">
       <li>Jeden Tag 15–20 Minuten ein Thema anschauen.</li>
       <li>Danach das Quiz zum Thema machen (mindestens 70 % = bestanden ✅).</li>
       <li>Lernziel in der Liste unten abhaken.</li>
       <li>Am Schluss das 🎓 Prüfungs-Quiz machen.</li>
+      <li>Zum Schluss die <strong>📝 Probeprüfung</strong> schreiben (mit Zeit und Note).</li>
     </ol>
   </div>
   <div class="card">
@@ -147,7 +148,7 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
   </div>
   <div class="card">
     <h2>🕰️ Der Zeitstrahl</h2>
-    <p class="note">Antikes Griechenland und das Römische Reich gehören zur <strong>Antike</strong> (deshalb stehen sie im Heft in Klammern). Das Mittelalter ist gelb markiert. <strong>Jahreszahlen musst du nicht auswendig können!</strong></p>
+    <p class="note">Antikes Griechenland und das Römische Reich gehören zur <strong>Antike</strong> (deshalb stehen sie im Heft in Klammern). Das Mittelalter ist gelb markiert. <strong>Jahreszahlen musst du nicht auswendig können! Die Jahreszahlen ab 1500 sind Richtwerte und stehen nicht im Heft.</strong></p>
     <div class="tl" id="timeline"></div>
     <div id="quiz-zeitalter"></div>
   </div>
@@ -172,16 +173,16 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
     <h3>Wichtige Stationen (korrigiert)</h3>
     <ul class="tight">
       <li><strong>375:</strong> Die Hunnen fallen in Europa ein und verdrängen die dort lebenden Germanenstämme.</li>
-      <li><strong>410:</strong> Die Westgoten plündern Rom (unter Alarich) und ziehen weiter nach Spanien.</li>
+      <li><strong>410:</strong> Die Westgoten plündern Rom (unter Alarich) und ziehen weiter nach Südfrankreich und Spanien.</li>
       <li><strong>429:</strong> Die Vandalen ziehen über Spanien nach Nordafrika und gründen dort ein eigenes Reich.</li>
       <li><strong>450:</strong> Die Sachsen (und Angeln) landen in England und verdrängen die Kelten nach Wales und Schottland.</li>
       <li><strong>451:</strong> Die Hunnen unter Attila werden geschlagen (Schlacht auf den Katalaunischen Feldern) und ziehen sich zurück.</li>
       <li><strong>476:</strong> Ende des Weströmischen Reiches – Beginn des Mittelalters.</li>
       <li><strong>486:</strong> Die Franken besiegen den letzten römischen Statthalter (Syagrius) und besiedeln Gallien.</li>
-      <li><strong>488:</strong> Die Ostgoten unter Theoderich erobern Italien.</li>
+      <li><strong>488:</strong> Die Ostgoten unter Theoderich beginnen Italien zu erobern (zum König wird er um 493).</li>
     </ul>
     <h3>Folgen</h3>
-    <p>Es entstanden <strong>neue germanische Reiche</strong> (Frankenreich, Ostgotenreich in Italien, Westgotenreich in Spanien, Vandalenreich in Nordafrika, Angelsachsen in England). Viele Germanen liessen sich im Römischen Reich nieder, arbeiteten und handelten mit den Römern und <strong>nahmen deren Kultur, Recht und Sprache an</strong>. Aus ihrer Sprache entstanden später Deutsch, Französisch und andere Sprachen.</p>
+    <p>Es entstanden <strong>neue germanische Reiche</strong> (Frankenreich, Ostgotenreich in Italien, Westgotenreich in Spanien, Vandalenreich in Nordafrika, Angelsachsen in England). Viele Germanen liessen sich im Römischen Reich nieder, arbeiteten und handelten mit den Römern und <strong>nahmen deren Kultur, Recht und Sprache an</strong>. Aus den germanischen Sprachen entwickelten sich später z. B. Deutsch und Englisch, aus dem Latein der Römer z. B. Französisch, Italienisch und Spanisch.</p>
     <h3>Das Ende des Römischen Reiches</h3>
     <p>Als sie am mächtigsten waren, beherrschten die <strong>Römer riesige Gebiete in Europa und um das Mittelmeer</strong>. Von <strong>400–600 n. Chr.</strong> ging dieses Reich langsam unter. Ein wichtiger Grund waren die <strong>germanischen Stämme</strong>, die immer weiter nach Süden ins römische Reich vordrangen.</p>
     <h3>Europa nach der Völkerwanderung (gegen 600 n. Chr.)</h3>
@@ -216,7 +217,7 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
     <h3>Rechte und Pflichten im Lehnswesen</h3>
     <table class="korr">
       <tr><th>Lehnsherr (z. B. König)</th><th>Vasall (Lehnsmann)</th></tr>
-      <tr><td>Gibt Land (ein Lehen), Schutz und Rechtsprechung</td><td>Treue, sein Recht (die Regeln des Königs) durchsetzen, im Krieg helfen (Kriegsdienst/Heerfolge), die Untertanen beschützen, Abgaben leisten</td></tr>
+      <tr><td>Gibt Land (ein Lehen), Schutz und Rechtsprechung</td><td>Treue, sein Recht (die Regeln des Königs) durchsetzen, im Krieg helfen (Kriegsdienst/Heerfolge), die Untertanen beschützen</td></tr>
     </table>
     <h3>Die Ständeordnung</h3>
     <p>Im Mittelalter wurde jeder Mensch in eine <strong>Gesellschaftsgruppe – einen Stand</strong> – hineingeboren. Die Menschen glaubten, dass diese Ordnung <strong>gottgewollt</strong> war. Welcher Stand man angehörte, hing nicht von Fleiss oder Reichtum ab, sondern <strong>von der Geburt</strong>: Wer als Sohn eines Bauern zur Welt kam, konnte niemals König, Graf oder Ritter werden.</p>
@@ -238,7 +239,7 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
     <div class="goals">🎯 <strong>Lernziele:</strong> Du kannst <strong>3 Dinge nennen, die ein Knappe</strong> in seiner Ausbildung zum Ritter lernen musste. Du kannst die <strong>Waffen eines Ritters korrekt benennen</strong>.</div>
     <h3>Wie entstand das Rittertum?</h3>
     <p>Die Geschichte des Rittertums begann im <strong>8. Jahrhundert</strong>. Arabische Heere hatten grosse Teile des Nahen Ostens, Nordafrikas und der Iberischen Halbinsel (Spanien/Portugal) erobert und kämpften zu Pferd mit schnellen Überfällen. Der König der Franken gründete deshalb eine Reiterarmee, die <strong>fränkischen Panzerreiter</strong>. Diese trugen einen Panzer und waren mit Lanzen und Schwertern bewaffnet. Der Panzerreiter wurde zum Vorbild des Rittertums.</p>
-    <p>Eine vollständige Rüstung mit Streitross, Schild und Lanze kostete etwa <strong>so viel wie ein ganzes fränkisches Dorf</strong> (im Heft: ca. 45 Kühe) – Rittersein war also sehr teuer.</p>
+    <p>Eine vollständige Rüstung mit Streitross, Schild und Lanze kostete etwa <strong>45 Kühe</strong> (so viel, wie ein ganzes fränkisches Dorf besass) – Rittersein war also sehr teuer.</p>
     <h3>Die Ausbildung zum Ritter</h3>
     <ul class="tight">
       <li><strong>Page</strong> (ab <strong>7 Jahren</strong>): höfliches Benehmen, Lesen, Schreiben, Schwimmen, Tanzen, eine Fremdsprache, Musizieren, Schachspielen, Hilfe in der Küche – und der Umgang mit Waffen (Bogenschiessen, Fechten, Reiten in schwerer Rüstung, Faustkampf).</li>
@@ -248,6 +249,11 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
     <h3>Rüstung und Waffen</h3>
     <p>Im Alltag trug der Ritter einen langen Rock. Im Kampf trug er eine <strong>bis zu 25 kg schwere Rüstung</strong> und darüber das <strong>Kettenhemd</strong> (ein Eisenhemd aus vielen Eisenringen). Beim An- und Ablegen der Rüstung musste ihm der Knappe helfen. Klicke die Waffen-Kärtchen an, um die Namen zu sehen:</p>
     <div class="wgrid" id="wgrid"></div>
+    <h3>Die Rüstung des Ritters</h3>
+    <p>Von oben nach unten: <strong>Helm</strong> mit <strong>Visier</strong>, <strong>Halsberge</strong> (Halsschutz), <strong>Schulterpanzerung</strong>, <strong>Brustharnisch</strong>, <strong>Ellenbogenkachel</strong>, <strong>Panzerhandschuh</strong>, <strong>Hüftpanzerung</strong>, <strong>Kettenhemd</strong>, <strong>Schenkelstück</strong>, <strong>Kniestück</strong> und <strong>Beinschienen</strong>.</p>
+    <h3>Das Turnier</h3>
+    <p>Beim Turnier kämpften die Ritter im <strong>Tjost</strong> mit Lanzen zu Pferd gegeneinander. Ein <strong>Herold</strong> verkündete die Teilnehmer. Der <strong>Knappe</strong> sorgte für Pferd und Rüstung und machte seinen Herrn nach jeder Attacke so schnell wie möglich wieder bereit – sonst hätte der Gegner ihn leicht besiegen können.</p>
+    <div id="quiz-ruestung"></div>
     <div id="quiz-ritter"></div>
     <h3>Waffen-Quiz</h3>
     <div id="quiz-waffen"></div>
@@ -270,7 +276,7 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
       <li><strong>Wohnburg:</strong> diente in erster Linie dem Burgherrn als <strong>Wohnhaus</strong> – bot aber nicht den besten Schutz.</li>
       <li><strong>Fliehburg</strong> (Fluchtburg, Volksburg, Bauernburg): nicht dauerhaft bewohnt – <strong>Rückzugsort bei Kriegsgefahr</strong>.</li>
     </ul>
-    <p class="note">Der Begriff «Burg» bedeutete ursprünglich «befestigte Höhe». Die ersten Burgen waren einfache vieredige Türme aus Holz.</p>
+    <p class="note">Der Begriff «Burg» bedeutete ursprünglich «befestigte Höhe». Die ersten Burgen waren einfache viereckige Türme aus Holz.</p>
     <div id="quiz-burgtypen"></div>
   </div>
   <div class="card">
@@ -335,16 +341,16 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
       <li><strong>Welche anderen Gebäude gab es in der Burg?</strong> Burgkapelle (kleine Kirche), Vorratsräume, Werkstätten der Handwerker, Gebäude für die Dienstleute, Ställe.</li>
       <li><strong>Welche zwei (mechanischen) Schusswaffen wurden im Film beschrieben?</strong> (Pfeil-)Bogen und Armbrust.</li>
       <li><strong>Wie weit kann man mit der Armbrust schiessen? Weshalb?</strong> Etwa 60–80 m – ein geübter Arm hält die Sehne; zusätzlich kann mit einer Winde gespannt werden.</li>
-      <li><strong>Wie wurden Burgen angegriffen?</strong> Mit Brandballen und Pechkränzen, die in die Burg geschleudert wurden; im späteren Mittelalter kamen Waffen mit Schwarzpulver dazu (z. B. Sturmböcke, Sturmleitern). Mineure gruben Stollen bis zum Mauerfundament und machten dort Feuer, damit die Mauer einstürzte. Tierkadaver (tote Tiere) wurden hineingeschleudert, um Seuchen zu verbreiten. Bei einer Belagerung lebt die Burg nur noch von Vorräten: Wasser aus dem Brunnen und aus Zisternen (Regenwasser-Behälter). Irgendwann müssen die Bewohner hinaus – oder sie verhungern.</li>
+      <li><strong>Wie wurden Burgen angegriffen?</strong> Mit Brandballen und Pechkränzen, die in die Burg geschleudert wurden; im späteren Mittelalter kamen Waffen mit Schwarzpulver dazu. Mineure gruben Stollen bis zum Mauerfundament und machten dort Feuer, damit die Mauer einstürzte. Tierkadaver (tote Tiere) wurden hineingeschleudert, um Seuchen zu verbreiten. Bei einer Belagerung lebt die Burg nur noch von Vorräten: Wasser aus dem Brunnen und aus Zisternen (Regenwasser-Behälter). Irgendwann müssen die Bewohner hinaus – oder sie verhungern.</li>
     </ol>
   </div>
   <div class="card">
     <h2>🌅 Leben auf der Burg – gar nicht so romantisch</h2>
     <p>Die Burg war <strong>Wohn- und Zufluchtsort</strong>, aber auch <strong>Verwaltungszentrum, Vorratslager und Gericht</strong>. Der Alltag war <strong>hart, straff organisiert und bot nur wenig Abwechslung</strong>. Die <strong>Sonne gab den Takt vor</strong>: Aufstehen beim Morgengrauen, arbeiten bis zur Dunkelheit. Nur der <strong>Sonntag war frei</strong> (Erholung und Kirchgang).</p>
-    <p>Im <strong>Winter</strong> war es kalt – nur wenige Räume konnten beheizt werden (Beleuchtung und Heizung kosteten viel Holz). Die <strong>Hygiene war schlecht</strong>: Das Wasser war oft verunreinigt, Bäder gab es kaum. Zum Essen gab es Brot, Brei, Eier und Milch, aber <strong>sehr selten Fleisch</strong> – und <strong>Kartoffeln, Mais, Reis und Nudeln gab es in Europa noch nicht</strong>. Weil das Wasser oft verunreinigt war, tranken die Burgbewohner lieber leicht alkoholhaltige Getränke wie Bier oder Wein.</p>
+    <p>Im <strong>Winter</strong> war es kalt – nur wenige Räume konnten beheizt werden (Beleuchtung und Heizung kosteten viel Holz). Die <strong>Hygiene war schlecht</strong>: Das Wasser war oft verunreinigt, Waschen und Baden waren aufwendig. Zum Essen gab es Brot, Brei, Eier und Milch, aber <strong>sehr selten Fleisch</strong> – und <strong>Kartoffeln und Mais gab es in Europa noch nicht</strong> (sie kamen erst nach der Entdeckung Amerikas). Weil das Wasser oft verunreinigt war, tranken die Burgbewohner lieber leicht alkoholhaltige Getränke wie Bier oder Wein.</p>
     <p>Der <strong>Burgvogt</strong> war so etwas wie der Manager der Burg: Er wachte über die Bediensteten, verteilte die Arbeiten und war für Verwaltung und Gerichtsbarkeit zuständig.</p>
     <h3>Wer auf der Burg lebte und arbeitete</h3>
-    <p>Auf grösseren Burgen wohnten oft <strong>viele hundert Menschen</strong>: Mehrere Dutzend gehörten schon zur Familie des Burgherrn (Frauen, Kinder, unverheiratete Verwandte), zehn oder mehr Männer zur Besatzung. Dazu kamen Küchenmeister und Küchenpersonal, Knechte für Felder, Weinberge und Wälder, Mägde, Handwerker (Schmied, Steinmetz, Zimmermann), der Stallmeister und bei reichen Adligen ein Jagdmeister mit Gehilfen. Der <strong>Burgwogt</strong> war so etwas wie der Manager der Burg: Er wachte über die Bediensteten, delegierte die Arbeiten und war für Verwaltung und Gerichtsbarkeit zuständig.</p>
+    <p>Auf grösseren Burgen wohnten oft <strong>viele hundert Menschen</strong>: Mehrere Dutzend gehörten schon zur Familie des Burgherrn (Frauen, Kinder, unverheiratete Verwandte), zehn oder mehr Männer zur Besatzung. Dazu kamen Küchenmeister und Küchenpersonal, Knechte für Felder, Weinberge und Wälder, Mägde, Handwerker (Schmied, Steinmetz, Zimmermann), der Stallmeister und bei reichen Adligen ein Jagdmeister mit Gehilfen.</p>
     <h3>Jahreszeiten, Feste und Abwechslung</h3>
     <ul class="tight">
       <li><strong>Winter:</strong> Eiseskälte drinnen wie draussen – nur wenige Räume konnten beheizt werden, die Felder lagen brach; bei Schnee war manche Höhenburg lange von der Aussenwelt abgeschnitten.</li>
@@ -371,7 +377,7 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
     <ul class="tight">
       <li><strong>Arbeit:</strong> Der Arbeitstag begann bei Sonnenaufgang und endete mit dem Einbruch der Dunkelheit; der Alltag war durch die Jahreszeiten bestimmt. Im Frühjahr Äcker bestellen, pflügen und säen; Sommer und Frühherbst: Ernte- und Pflegearbeiten; im Winter ruhte die Landwirtschaft.</li>
       <li><strong>Vieh:</strong> Die Bauern waren auch <strong>Viehhalter</strong>. Rinder dienten als Zugtiere und lieferten Milch, Fleisch und Leder; Schweine, Hühner und Gänse lieferten Fleisch und Eier; Schafe lieferten Wolle für die Kleidung. Die Viehversorgung war eine weitere zeitintensive Verpflichtung.</li>
-      <li><strong>Ernährung:</strong> einfach und meist selbst produziert: Kohl, Rüben, Hülsenfrüchte (Erbsen, Bohnen, Linsen), Milchprodukte, Eier, selten Fleisch; ab dem Hochmittelalter Getreide wie Weizen, Roggen, Gerste und Hafer (für Brot und Brei – wegen der schlechten Zähne oft weich gekocht). <strong>Kartoffeln, Reis und Nudeln gab es im mittelalterlichen Europa noch nicht!</strong></li>
+      <li><strong>Ernährung:</strong> einfach und meist selbst produziert: Kohl, Rüben, Hülsenfrüchte (Erbsen, Bohnen, Linsen), Milchprodukte, Eier, selten Fleisch; ab dem Hochmittelalter Getreide wie Weizen, Roggen, Gerste und Hafer (für Brot und Brei – wegen der schlechten Zähne oft weich gekocht). <strong>Kartoffeln, Mais und Tomaten gab es im mittelalterlichen Europa noch nicht!</strong> Reis und Nudeln waren in Mitteleuropa kaum bekannt.</li>
     </ul>
     <h3>Bäuerinnen und Kinder auf dem Land</h3>
     <p>Die <strong>Bäuerinnen</strong> halfen bei der Feldarbeit, bestellten den eigenen Garten, erledigten den Haushalt, die Kinderbetreuung und die Herstellung der Kleidung (Materialien herstellen und Kleidung anfertigen). Ihre Gesundheit war gefährdet: Viele Frauen waren fast fortwährend schwanger, und eine <strong>Entbindung war lebensgefährlich</strong>.</p>
@@ -461,12 +467,14 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
       <tr><td>Kaufleute / Händler</td><td>Handelten mit Waren aus aller Welt, wohnten in steinernen Häusern, waren oft reich.</td></tr>
       <tr><td>Handwerker</td><td>Waren in Zünften organisiert, wohnten über ihrer Werkstatt.</td></tr>
       <tr><td>Klerus (Mönche, Nonnen, Pfarrer)</td><td>Lebten in Klöstern und an den Kirchen der Stadt.</td></tr>
+      <tr><td>Patrizier (Oberschicht)</td><td>Reiche Kaufleute und Ratsherren – sie bestimmten in der Stadt oft mit.</td></tr>
       <tr><td>Tagelöhner</td><td>Arm, hatten kaum Rechte und kein eigenes Land.</td></tr>
+      <tr><td>Randgruppen</td><td>Fahrendes Volk, Henker und andere Aussenseiter – oft ohne Bürgerrecht.</td></tr>
     </table>
     <h3>Zünfte</h3>
     <p>Eine <strong>Zunft</strong> war der Zusammenschluss aller Handwerker des gleichen Berufs in einer Stadt. Aufgaben: 1) die <strong>Ausbildung regeln</strong> (Lehrling → Geselle → Meister), 2) <strong>Qualität und Preise</strong> der Ware festlegen, 3) <strong>füreinander sorgen</strong> (z. B. bei Krankheit, für Witwen und Waisen).</p>
     <h3>Eheschliessung</h3>
-    <p>Eine Ehe wurde im Mittelalter meist <strong>von den Eltern / der Familie bestimmt</strong> – aus wirtschaftlichen oder politischen Gründen. Mädchen heirateten oft schon mit <strong>12 Jahren</strong>, Jungen mit <strong>14 Jahren</strong>. Die Frau musste dem Mann gehorchen.</p>
+    <p>Eine Ehe wurde im Mittelalter meist <strong>von den Eltern / der Familie bestimmt</strong> – aus wirtschaftlichen oder politischen Gründen. Mädchen heirateten oft schon mit <strong>12 Jahren</strong>, Jungen mit <strong>14 Jahren</strong>. Die Frau musste dem Mann gehorchen. <em>(Ergänzung, nicht im Heft:)</em> Die Kirche segnete die Ehe, die Familie der Braut gab oft eine <strong>Mitgift</strong> (Besitz) mit, und hörige Bauern brauchten eine <strong>Heiratserlaubnis</strong> (gegen Abgabe).</p>
     <div id="quiz-stadt"></div>
   </div>
 </section>
@@ -481,6 +489,15 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
   </div>
 </section>
 
+<section class="page" id="sec-probe">
+  <div class="card">
+    <h2>📝 Probeprüfung (50 Punkte)</h2>
+    <p>Beantworte alle 20 Fragen schriftlich – <strong>ohne ins Heft zu schauen</strong>. Klappe danach die Lösung auf, trage deine Punkte ein und werte aus. <strong>Note = Punkte ÷ 10 + 1</strong> (die Lehrperson kann anders bewerten).</p>
+    <p><button class="btn" id="probeTimer">⏱ Timer starten (40:00)</button> <strong id="probeTime"></strong></p>
+    <div id="probe"></div>
+  </div>
+</section>
+
 <!-- ================= LEXIKON ================= -->
 <section class="page" id="sec-lexikon">
   <div class="card">
@@ -492,6 +509,8 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
   <div class="card">
     <h2>✍️ Rechtschreib-Quiz: Fachbegriffe</h2>
     <p>Die Lehrperson achtet auf die <strong>Rechtschreibung der Fachbegriffe</strong>. Wie schreibt man … richtig?</p>
+    <h3>✍️ Schreib-Training</h3>
+    <div id="schrTrain"></div>
     <div id="quiz-rechtschreibung"></div>
   </div>
 </section>
@@ -500,12 +519,12 @@ textarea.free{width:100%;min-height:80px;padding:8px;border:1px solid #cbb894;bo
 <section class="page" id="sec-korrekturen">
   <div class="card">
     <h2>📖 Korrekturen und Hinweise zum Schulheft</h2>
-    <p>Im Heft waren viele Wörter falsch geschrieben oder durch das Scannen unleserlich. Hier sind die <strong>wichtigsten Korrekturen</strong> – in dieser App werden überall die richtigen Schreibweisen verwendet:</p>
+    <p>Hier stehen <strong>Fehler und Vereinfachungen im Schulheft und in den Arbeitsblättern</strong>. In dieser App stehen überall die richtigen Schreibweisen. Einzelne Handschriften sind schwer lesbar, deshalb können Lesefehler vorkommen:</p>
     <div id="korrList"></div>
   </div>
   <div class="card">
     <h2>❓ Unleserliche / unverständliche Stellen</h2>
-    <p>Folgende Stellen im Schulheft waren <strong>unleserlich oder nicht verständlich</strong> und wurden in dieser App sinngemäss ergänzt:</p>
+    <p>Folgende Stellen im Schulheft waren <strong>unleserlich oder nicht verständlich</strong> und wurden in dieser App <strong>nicht</strong> geraten:</p>
     <ul class="tight" id="unreadList"></ul>
   </div>
 </section>
@@ -535,12 +554,12 @@ var EPOCHS=[
  {n:"Antikes Griechenland",d:"ca. 800–146 v. Chr.",t:"Antike: Demokratie in Athen, Philosophie, Olympische Spiele"},
  {n:"Eisenzeit",d:"ab ca. 800 v. Chr.",t:"Eisen wird wichtig; Kelten und Germanen in Mitteleuropa"},
  {n:"Römisches Reich",d:"753 v. Chr.–476 n. Chr.",t:"Antike: Republik und Kaiserreich, Strassen, Recht, Christentum"},
- {n:"Frühes Mittelalter",d:"ca. 500–1050 n. Chr.",t:"Völkerwanderung, Frankenreich, erste Burgen und Klöster",ma:true},
+ {n:"Frühmittelalter",d:"ca. 500–1050 n. Chr.",t:"Völkerwanderung, Frankenreich, erste Burgen und Klöster",ma:true},
  {n:"Hochmittelalter",d:"ca. 1050–1250 n. Chr.",t:"Ritter, Kreuzzüge, Städte und Zünfte entstehen",ma:true},
  {n:"Spätmittelalter",d:"ca. 1250–1500 n. Chr.",t:"Städte wachsen, Pest 1348, Entdeckung Amerikas 1492",ma:true},
  {n:"Frühe Neuzeit",d:"ca. 1500–1789",t:"Buchdruck, Reformation, Entdeckungsreisen"},
  {n:"Neuere Geschichte",d:"ca. 1789–1945",t:"Französische Revolution, Industrialisierung, Weltkriege"},
- {n:"Neuste Geschichte",d:"ab ca. 1945",t:"Zweiter Weltkrieg, UNO, Digitalisierung – bis heute"}
+ {n:"Neuste Geschichte",d:"ab ca. 1945",t:"Kalter Krieg, UNO, Digitalisierung – bis heute"}
 ];
 
 var WAFFEN=[
@@ -557,21 +576,21 @@ var WAFFEN=[
 var BAUTEILE=[
  {n:1,name:"Brunnen",desc:"Die Wasserquelle der Burg – lebenswichtig, besonders bei einer Belagerung.",mx:430,my:388},
  {n:2,name:"Burggarten",desc:"Garten innerhalb der Burg für Kräuter, Gemüse und Heilpflanzen.",mx:380,my:367},
- {n:3,name:"Burghof",desc:"Der offene Innenhof in der Mitte der Burg.",mx:465,my:375},
+ {n:3,name:"Burghof",desc:"Der offene Innenhof in der Mitte der Burg.",mx:600,my:416},
  {n:4,name:"Burggraben",desc:"Wassergraben, der die Burg umgibt und Angreifer aufhält.",mx:200,my:458},
  {n:5,name:"Burgkapelle",desc:"Die Kirche der Burg für Gottesdienste.",mx:299,my:335},
- {n:6,name:"Burgtor",desc:"Der Eingang zur Burg.",mx:463,my:375},
+ {n:6,name:"Burgtor",desc:"Der Eingang zur Burg.",mx:463,my:392},
  {n:7,name:"Bergfried",desc:"Der höchste Turm der Burg – der letzte Zufluchtsort bei einem Angriff.",mx:335,my:120},
  {n:8,name:"Fallgitter",desc:"Eisernes Gitter über dem Tor, das man bei Gefahr herunterlassen konnte.",mx:463,my:323},
  {n:9,name:"Kemenate (Frauenhaus)",desc:"Beheizbarer Wohnraum, in dem sich die adligen Frauen aufhielten.",mx:555,my:290},
  {n:10,name:"Palas (Herrenhaus)",desc:"Wohn- und Festsaalgebäude des Burgherrn, oft mehrstöckig.",mx:425,my:290},
  {n:11,name:"Pechnase",desc:"Öffnung in der Mauer über dem Tor: Hier konnte man Pech oder heisses Wasser auf Angreifer giessen.",mx:502,my:302},
  {n:12,name:"Ringmauer",desc:"Die Mauer, die die ganze Burg umgibt.",mx:640,my:300},
- {n:13,name:"Torgraben",desc:"Der Graben direkt vor dem Burgtor.",mx:470,my:458},
+ {n:13,name:"Torgraben",desc:"Der Graben direkt vor dem Burgtor.",mx:470,my:466},
  {n:14,name:"Verlies",desc:"Unterirdisches Gefängnis, meist im Bergfried.",mx:335,my:386},
  {n:15,name:"Vorratshaus",desc:"Lagerhaus für Lebensmittel, Waffen und andere Vorräte.",mx:557,my:367},
- {n:16,name:"Zinne",desc:"Die Zacken auf Mauern und Türmen – dahinter konnten sich die Verteidiger decken.",mx:620,my:153},
- {n:17,name:"Wehrgang",desc:"Der überdachte Gang auf der Mauer zum Wachen und Verteidigen.",mx:300,my:213},
+ {n:16,name:"Zinne",desc:"Die Zacken auf Mauern und Türmen – dahinter konnten sich die Verteidiger decken.",mx:610,my:150},
+ {n:17,name:"Wehrgang",desc:"Der Gang oben auf der Mauer (oft überdacht) zum Wachen und Verteidigen.",mx:545,my:208},
  {n:18,name:"Zugbrücke",desc:"Die Holzbrücke über dem Graben, die man bei Gefahr hochziehen konnte.",mx:465,my:433},
  {n:19,name:"Schiessscharte",desc:"Schmale Öffnung in der Mauer, durch die man schiessen konnte (z. B. mit der Armbrust).",mx:335,my:164}
 ];
@@ -580,7 +599,7 @@ var LEHN_PYR=[
  {w:"46%",c:"#6f4520",t:"König",d:"Ganz oben: Der König (bzw. Kaiser/Papst). Er entschied über Krieg und Frieden, erliess Gesetze, war oberster Richter und vergab Land an seine Kronvasallen."},
  {w:"64%",c:"#8a5a2b",t:"Kronvasalle",d:"Hohe Adelige: Herzöge, Grafen und Bischöfe. Sie bekamen Land (Lehen) vom König und mussten ihm dafür treu sein, Rat geben und Kriegsdienst leisten."},
  {w:"82%",c:"#a9743f",t:"Untervasalle",d:"Vögte und Ritter. Sie bekamen Land von den Kronvasallen und herrschten über eine Burg oder ein Dorf. Dafür mussten sie im Krieg kämpfen."},
- {w:"100%",c:"#c0915a",t:"Abhängige",d:"Ganz unten: Bauern, Knechte und Handwerker. Sie arbeiteten auf dem Land des Herrn und hatten die wenigsten Rechte."}
+ {w:"100%",c:"#c0915a",t:"Abhängige",d:"Ganz unten: Bauern (freie, hörige und leibeigene) und Knechte. Sie arbeiteten auf dem Land des Herrn und hatten die wenigsten Rechte."}
 ];
 
 var LERNZIELE=[
@@ -615,7 +634,7 @@ QUIZZES.zeitalter={title:"⏳ Quiz: Zeitalter und Epoche",mount:"quiz-zeitalter"
  {type:"mc",q:"Wo liegt das Mittelalter?",options:["Ganz am Anfang der Geschichte","In der Mitte zwischen der Antike und der Neuzeit","Ganz am Ende der Geschichte","Vor der Steinzeit"],answer:1},
  {type:"mc",q:"Womit beginnt das Mittelalter?",options:["Mit dem Ende des Römischen Reiches und der Völkerwanderung","Mit der Erfindung des Buchdrucks","Mit der Entdeckung Amerikas","Mit der Geburt von Jesus"],answer:0},
  {type:"mc",q:"In welche drei Abschnitte wird das Mittelalter unterteilt?",options:["Frühmittelalter, Hochmittelalter, Spätmittelalter","Altsteinzeit, Bronzezeit, Eisenzeit","Antike, Neuzeit, Neuste Zeit","Königreich, Lehnswesen, Burg"],answer:0},
- {type:"multi",q:"Welche Zeitalter gehören zur Antike? (wähle alle zutreffenden aus)",options:["Antikes Griechenland","Römisches Reich","Altsteinzeit","Frühes Mittelalter","Bronzezeit"],answers:[0,1]}
+ {type:"multi",q:"Welche Zeitalter gehören zur Antike? (wähle alle zutreffenden aus)",options:["Antikes Griechenland","Römisches Reich","Altsteinzeit","Frühmittelalter","Bronzezeit"],answers:[0,1]}
 ]};
 
 QUIZZES.voelker={title:"🏹 Quiz: Völkerwanderung",mount:"quiz-voelker",questions:[
@@ -642,7 +661,7 @@ QUIZZES.lehen={title:"👑 Quiz: Lehnswesen und Ständeordnung",mount:"quiz-lehe
 ]};
 
 QUIZZES.ritter={title:"⚔️ Quiz: Ausbildung zum Ritter",mount:"quiz-ritter",questions:[
- {type:"order",q:"Bringe die Stufen der Riterausbildung in die richtige Reihenfolge:",items:["Page (ab 7 Jahren)","Knappe (ab 14 Jahren)","Ritterschlag (mit etwa 21 Jahren)"]},
+ {type:"order",q:"Bringe die Stufen der Ritterausbildung in die richtige Reihenfolge:",items:["Page (ab 7 Jahren)","Knappe (ab 14 Jahren)","Ritterschlag (mit etwa 21 Jahren)"]},
  {type:"multi",q:"Nenne 3 Dinge, die ein Knappe in seiner Ausbildung lernte. Wähle genau 3 aus:",options:["Reiten","Fechten","Umgang mit Lanze und Schwert","Tanzen und Musizieren (das lernte schon der Page)","In der Küche helfen (das machte der Page)","Lesen und Schreiben (das lernte der Page)"],answers:[0,1,2]},
  {type:"mc",q:"Was geschah beim Ritterschlag?",options:["Der König, ein Priester oder ein Bischof tippte dem jungen Mann mit der Schwertklinge leicht auf die Schulter – damit wurde er in den Ritterstand erhoben","Man bekam ein neues Pferd","Man musste einen Drachen besiegen","Man bekam die ganze Burg geschenkt"],answer:0},
  {type:"mc",q:"Was lernte man als Page (ab 7 Jahren)?",options:["Höfliches Benehmen, Lesen, Schreiben, Schwimmen, Tanzen, eine Fremdsprache, Musik, Schach – und den Umgang mit Waffen wie Bogen und Schwert","Sofort den schweren Lanzenkampf in voller Rüstung","Nur schlafen und essen","Gar nichts – man spielte den ganzen Tag"],answer:0},
@@ -676,10 +695,10 @@ QUIZZES.bauteile={title:"🧱 Quiz: Bauteile der Burg (Nr. in der Skizze)",mount
 }};
 
 QUIZZES.burgleben={title:"🌅 Quiz: Leben auf der Burg",mount:"quiz-burgleben",questions:[
- {type:"multi",q:"Wähle 3 Beispiele, die zeigen, dass das Burgleben nicht einfach war:",options:["Langer, harter Arbeitstag von Sonnenaufgang bis zur Dunkelheit","Im Winter war es kalt – nur wenige Räume konnten beheizt werden (viel Holz nötig)","Die Hygiene war schlecht: das Wasser war oft verunreinigt, Bäder gab es kaum","Jeden Tag fand ein grosses Fest mit vielen Gästen statt","Es gab beheizte Schwimmbäder und Zentralheizung","Man ass jeden Tag Schokolade und Zucker"],answers:[0,1,2]},
+ {type:"multi",q:"Wähle 3 Beispiele, die zeigen, dass das Burgleben nicht einfach war:",options:["Langer, harter Arbeitstag von Sonnenaufgang bis zur Dunkelheit","Im Winter war es kalt – nur wenige Räume konnten beheizt werden (viel Holz nötig)","Die Hygiene war schlecht: das Wasser war oft verunreinigt, Waschen und Baden waren aufwendig","Jeden Tag fand ein grosses Fest mit vielen Gästen statt","Es gab beheizte Schwimmbäder und Zentralheizung","Man ass jeden Tag Schokolade und Zucker"],answers:[0,1,2]},
  {type:"mc",q:"Was war die Burg auch noch?",options:["Wirtschaftszentrum, Verwaltung und Gericht – hier wohnte der Burgherr","Nur ein grosses Museum","Ein Bahnhof","Eine Schule für alle Kinder"],answer:0},
  {type:"mc",q:"Warum war der Brunnen auf der Burg so wichtig?",options:["Er lieferte Trinkwasser – besonders wichtig bei einer Belagerung, wenn die Tore verschlossen waren","Nur zum Blumengiessen","Als Schwimmbad","Damit die Pferde baden konnten"],answer:0},
- {type:"mc",q:"Welche Lebensmittel gab es im mittelalterlichen Europa noch NICHT?",options:["Kartoffeln, Mais, Reis und Nudeln (die kamen erst später nach Europa)","Brot und Brei","Eier und Milch","Gemüse und Hülsenfrüchte"],answer:0},
+ {type:"mc",q:"Welche Lebensmittel gab es im mittelalterlichen Europa noch NICHT?",options:["Kartoffeln, Mais und Tomaten (die kamen erst nach der Entdeckung Amerikas nach Europa)","Brot und Brei","Eier und Milch","Gemüse und Hülsenfrüchte"],answer:0},
  {type:"mc",q:"Was tranken die Burgbewohner oft statt Wasser?",options:["Leicht alkoholhaltige Getränke wie Bier oder Wein, weil das Wasser oft verunreinigt war","Nur Orangensaft","Ausschliesslich Regenwasser","Coca-Cola"],answer:0}
 ]};
 
@@ -687,7 +706,7 @@ QUIZZES.land={title:"🌾 Quiz: Leben auf dem Land",mount:"quiz-land",questions:
  {type:"mc",q:"Wie viel Prozent der Menschen waren im Mittelalter etwa Bauern?",options:["Etwa 90 % – von 10 Personen waren 9 Bauern","Etwa 10 %","Etwa 50 %","Etwa 1 %"],answer:0},
  {type:"mc",q:"Was ist die Dreifelderwirtschaft?",options:["Ein Acker wurde zwei Jahre lang angebaut und dann ein Jahr brach liegen gelassen, damit sich der Boden erholen konnte","Jedes dritte Jahr wurde ein grosses Fest gefeiert","Man wechselte jedes Jahr das Feld mit dem Nachbarn","Ein besonderer Pflug"],answer:0},
  {type:"multi",q:"Wähle 3 typische Aufgaben der Bauern im Jahreslauf:",options:["Im Frühjahr die Äcker bestellen, pflügen und säen","Im Sommer jäten, Heu machen und ernten","Das Vieh hüten und versorgen (Zugtiere, Milch, Leder, Fleisch, Eier)","Im Winter Ski fahren gehen","In der grossen Stadt einkaufen","Burgen für den König bauen"],answers:[0,1,2]},
- {type:"multi",q:"Wähle 3 Lebensmittel, die es im Mittelalter in Europa gab:",options:["Brot und Brei aus Getreide","Gemüse, Rüben und Hülsenfrüchte (Erbsen, Bohnen, Linsen)","Milchprodukte und Eier","Kartoffeln","Mais","Reis"],answers:[0,1,2]},
+ {type:"multi",q:"Wähle 3 Lebensmittel, die es im Mittelalter in Europa gab:",options:["Brot und Brei aus Getreide","Gemüse, Rüben und Hülsenfrüchte (Erbsen, Bohnen, Linsen)","Milchprodukte und Eier","Kartoffeln","Mais","Tomaten"],answers:[0,1,2]},
  {type:"mc",q:"Woraus bestand ein Bauernhaus?",options:["Aus Holz und Lehm, das Dach aus Stroh; Fenster waren mit Brettern verschlossen (kein Glas)","Aus Stein und Glas","Aus Gold und Silber","Aus Beton"],answer:0},
  {type:"mc",q:"Wie lange dauerte der Arbeitstag der Bauern ungefähr?",options:["Von Sonnenaufgang bis zur Dunkelheit","Nur 2 Stunden","Nur am Wochenende","Gar nicht – sie ruhten sich aus"],answer:0},
  {type:"mc",q:"Wo im Bauernhaus war die Herdstelle?",options:["In der Mitte des Wohnraums – zum Heizen und Kochen; der Rauch entwich durch eine Öffnung im Dach","Auf dem Dach","Im Keller","Im Stall"],answer:0}
@@ -724,6 +743,14 @@ QUIZZES.stadt={title:"🏘️ Quiz: Stadt, Zünfte und Ehe",mount:"quiz-stadt",q
  {type:"mc",q:"Was passte NICHT zu einer mittelalterlichen Stadt?",options:["Enge Gassen, eine Mauer mit Tor, ein Marktplatz in der Mitte","Gerade breite Autobahnen","Hohe Häuser aus Holz und Stein","Ein grosser Dom / Münster"],answer:1}
 ]};
 
+var RUEST=[["Helm","Schutz für den Kopf"],["Visier","Beweglicher Gesichtsschutz am Helm"],["Halsberge","Schutz für den Hals"],["Schulterpanzerung","Schutz für die Schulter"],["Brustharnisch","Panzer für Brust und Oberkörper"],["Ellenbogenkachel","Schutz für den Ellenbogen"],["Panzerhandschuh","Schutz für die Hand"],["Hüftpanzerung","Schutz für die Hüfte"],["Kettenhemd","Eisenhemd aus vielen Ringen"],["Schenkelstück","Schutz für den Oberschenkel"],["Kniestück","Schutz für das Knie"],["Beinschienen","Schutz für den Unterschenkel"]];
+QUIZZES.ruestung={title:"🛡️ Quiz: Rüstungsteile",mount:"quiz-ruestung",gen:function(){
+  return shuffle(RUEST).map(function(w){
+    var others=shuffle(RUEST.filter(function(x){return x[0]!==w[0];})).slice(0,3).map(function(x){return x[0];});
+    var options=shuffle([w[0]].concat(others));
+    return {type:"mc",q:"Welcher Rüstungsteil ist das? <strong>"+esc(w[1])+"</strong>",options:options,answer:options.indexOf(w[0])};
+  });
+}};
 var RECHTSCHREIBUNG=[
  {q:"Das Eisenhemd aus vielen Eisenringen heisst …",options:["Kettenhemd","Ketenhemd","Kettenemd"],answer:0},
  {q:"Die Waffe, die schnell kurze Pfeile (Bolzen) schiesst, heisst …",options:["Armbrust","Ambrost","Armbrusts"],answer:0},
@@ -745,8 +772,8 @@ var RECHTSCHREIBUNG=[
  {q:"Die Einteilung der Gesellschaft in Klerus, Adel und Bauern heisst …",options:["Ständeordnung","Ständeortnung","Stendeordnung"],answer:0},
  {q:"Der Zusammenschluss der Handwerker eines Berufs heisst …",options:["Zunft","Zunfft","Zumpft"],answer:0},
  {q:"Der Zweikampf zweier Ritter mit der Lanze beim Turnier heisst …",options:["Tjost","Tjoscht","Djost"],answer:0},
- {q:"Die Abgabe nach der Anzahl der Familienmitglieder heisst …",options:["Kopfsteuer","Kopfzins","Kopfzehnt"],answer:0},
- {q:"Das beste Kleidungsstück, das beim Tod eines hörigen Bauern abgegeben wurde, heisst …",options:["Bestgewand","Bestkleid","Besthaupt"],answer:0}
+ {q:"Die Abgabe nach der Anzahl der Familienmitglieder heisst …",options:["Kopfsteuer","Kopfsteur","Koppfsteuer"],answer:0},
+ {q:"Das beste Kleidungsstück, das beim Tod eines hörigen Bauern abgegeben wurde, heisst …",options:["Bestgewand","Bestgewant","Besthaupt"],answer:0}
 ];
 QUIZZES.rechtschreibung={title:"✍️ Quiz: Rechtschreibung der Fachbegriffe",mount:"quiz-rechtschreibung",questions:RECHTSCHREIBUNG.map(function(r){
   return {type:"mc",q:r.q,options:r.options,answer:r.answer,expl:"Richtig geschrieben: "+r.options[r.answer]+"."};
@@ -781,49 +808,29 @@ var PRUEF_POOL=[
 QUIZZES.pruefung={title:"🎓 Prüfungs-Quiz (12 zufällige Fragen aus allen Themen)",mount:"quiz-pruefung",gen:function(){return shuffle(PRUEF_POOL).slice(0,12);}};
 
 /* ---------- KORREKTUREN ---------- */
-var KORREKTUREN=[
- ["«Zeitalter Epochen» / «Aus ein Epochen mit der gänserische der Neuzellen»","Das Mittelalter ist ein Zeitalter (eine Epoche) und liegt in der Mitte zwischen der Antike und der Neuzeit."],
- ["«Fruchmittelalter 0500–1050 a. chs.»","Frühmittelalter ca. 500–1050 n. Chr. (n. Chr. = nach Christus)"],
- ["«Feuchmittelalter 1000–1250»","Hochmittelalter ca. 1000–1250 n. Chr."],
- ["«Spitzmittelalter 0250–1500»","Spätmittelalter ca. 1250–1500 n. Chr."],
- ["«Das Ende des Komischen Reichs»","Das Ende des Römischen Reiches (476 n. Chr. endete das Weströmische Reich)"],
- ["«Coten»","Goten (Westgoten)"],
- ["«419: Die Westgoten … erobern Rom»","410: Die Westgoten plündern Rom (unter Alarich)"],
- ["«besiedeln Galaxien»","besiedeln Gallien"],
- ["«Handagrenzen … keine Notizen»","keine festen Grenzen und keine Pässe/Ausweise (sinngemäss ergänzt)"],
- ["«Herzöge, groten oder Bischöte»","Herzöge, Grafen oder Bischöfe"],
- ["«Die Lahnwiesen wird oft als Pyramide dargestellt»","Das Lehnswesen wird oft als Pyramide dargestellt"],
- ["«Klerus / Ad el / Dauers»","Klerus / Adel / Bauern"],
- ["«Tuque labore»","«labora» – die drei Aufgaben heissen ora, protege, labora (beten, schützen, arbeiten)"],
- ["«Die Mittelalterliche Bura» / «Baufarm»","Die mittelalterliche Burg / Bauform"],
- ["«Wutschaus»","Wohnturm"],
- ["«Fluchburg»","Fliehburg (Fluchtburg)"],
- ["«der Feilen» (S. 15, Filmfragen)","vermutlich «das Fallgitter»"],
- ["«Ambrust, Klam» (S. 15)","Armbrust und vermutlich Katapult/Balliste"],
- ["«Krongang» / «Kammelden»","Kirchgang / Kemenate"],
- ["«Lebefiguren» / «Verwalterspaargaben»","Leibeigene / Verwaltungsaufgaben"],
- ["«Dreifelder»","Dreifelderwirtschaft"],
- ["«Harknisch» (auf die Betten gelegt)","Strohsack (sinngemäss)"],
- ["«Kunststoff» (S. 20, Tiere)","Viehzucht / Zugtiere (sinngemäss)"],
- ["«Garste» / «Haller» / «Tröhren»","Gerste / Hafer / Bohnen"],
- ["«Feldfahrt» / «Blutzfahrt» (Abgaben)","Fruchtabgaben (Getreide, Gemüse, Wein) / tierische Abgaben (Milch, Eier, Butter, Honig, Wolle, Felle, Wachs)"],
- ["«Liberhaupt» / «Bredigewind»","Besthaupt (bestes Stück Vieh) / Bestkleid (bestes Kleid)"],
- ["«Frontenreife»","Frondienste"],
- ["«Hängen» (Lernziel)","Hörige"],
- ["«Zürften» (Lernziel)","Zünfte"]
-];
-var UNREADABLE=[
- "Seite 2 («Das Ende des Römischen Reiches»): grösstenteils unleserlich – Text wurde sinngemäss ergänzt (476 n. Chr., Ende des Weströmischen Reiches).",
- "Seite 4 (Folgen der Völkerwanderung): stark unleserlich – ergänzt aus dem Zusammenhang.",
- "Seite 15 (Antworten zu den Filmfragen): teilweise unleserlich.",
- "Seite 16: fast vollständig unleserlich – Inhalt nicht rekonstruierbar.",
- "Seite 17–18: einzelne Zeilen unleserlich (z. B. Ernährung, Hygiene auf der Burg).",
- "Seite 19 rechte Spalte: unleserlich.",
- "Seite 22 linke Spalte / Tabelle: teilweise unleserlich – sinngemäss ergänzt."
-];
+var KORREKTUREN=[["«Galizien» (Arbeitsblatt zur Völkerwanderung)", "Gallien (Nord- und Mittelfrankreich)"], ["«488: … Theoderich wird König» (Arbeitsblatt)", "Theoderich beginnt 488 mit der Eroberung Italiens; König von Italien wird er erst um 493."], ["«Sie durften nicht wählen, abstimmen» (Frauen, S. 26)", "Wählen und Abstimmen wie heute gab es nicht; gemeint ist: keine politische Mitbestimmung."], ["Rüstung «bis zu 25 kg» (S. 14) und «50 Kilogramm» (Konrad-Geschichte, S. 12)", "Beide Zahlen stehen im Material – für die Prüfung gilt «bis zu 25 kg»."], ["«Kettenhemd aus 1'000 Ringen» (S. 14)", "Echte Kettenhemden hatten viele Tausend Ringe – die Zahl ist stark vereinfacht."], ["«Kartoffeln, Reis und Nudeln gab es noch nicht» (S. 20)", "Kartoffeln und Mais gab es nicht; Reis und Nudeln waren in Mitteleuropa kaum bekannt, im Süden aber schon."], ["«Die Geschichte des Rittertums begann im 8. Jahrhundert» (S. 12)", "Vorbild sind die fränkischen Panzerreiter (8. Jh.); das Rittertum entwickelte sich bis ins Hochmittelalter."], ["«Die Mittelalterlich Ständeordnung» (S. 11)", "Die mittelalterliche Ständeordnung"], ["«Flichburg» (S. 16)", "Fliehburg"], ["«Gemanen» (S. 8)", "Germanen"], ["«römer», «europa», «antike» (S. 1–5)", "Römer, Europa, Antike – Nomen schreibt man gross"]];
+var UNREADABLE=["Rüstung (S. 14): Die Beschriftung unten links beim Fuss ist nicht lesbar.", "Burgzeichnung (S. 17): Die handgeschriebenen Nummern sind nicht sicher lesbar – es gilt die gedruckte Legende.", "Filmfragen zur Burg (S. 19): «Sturmkopf» und «Sturmkalben» sind nicht sicher lesbar.", "Lehnspyramide (S. 10): Ob Äbte zu den Kron- oder Untervasallen zählen, ist unklar – frage die Lehrperson.", "Kinder-Tabelle (S. 27): Die rechte Spalte ist nur teilweise lesbar.", "Stadt, Zünfte, Ehe: Dazu gibt es keine Seiten im Heft. Die Inhalte sind allgemeines Wissen – vergleiche sie mit den Unterlagen der Lehrperson."];
 
 /* ---------- LEXIKON ---------- */
 var LEXIKON=[
+["Helm", "Schutz für den Kopf."],
+["Visier", "Beweglicher Gesichtsschutz am Helm."],
+["Halsberge", "Rüstungsteil zum Schutz des Halses."],
+["Schulterpanzerung", "Rüstungsteil zum Schutz der Schulter."],
+["Brustharnisch", "Panzer für Brust und Oberkörper."],
+["Ellenbogenkachel", "Rüstungsteil zum Schutz des Ellenbogens."],
+["Panzerhandschuh", "Rüstungsteil zum Schutz der Hand."],
+["Hüftpanzerung", "Rüstungsteil zum Schutz der Hüfte."],
+["Schenkelstück", "Rüstungsteil zum Schutz des Oberschenkels."],
+["Kniestück", "Rüstungsteil zum Schutz des Knies."],
+["Beinschienen", "Rüstungsteile zum Schutz der Unterschenkel."],
+["Knappe", "Ritterlehrling ab 14 Jahren."],
+["Herold", "Ausrufer beim Turnier, der die Teilnehmer verkündet."],
+["Patrizier", "Reiche Kaufleute und Ratsherren der Stadt (Oberschicht)."],
+["Mitgift", "Besitz, den die Braut in die Ehe mitbringt."],
+["Lehrling", "Anfänger im Handwerk (Lehrling, Geselle, Meister)."],
+["Geselle", "Ausgelernter Handwerker."],
+["Meister", "Handwerker mit eigenem Betrieb."],
  ["Abt / Äbtissin","Vorsteher bzw. Vorsteherin eines Klosters."],
  ["Adel","Zweiter Stand: König, Fürsten, Herzöge, Grafen, Ritter – mussten schützen und kämpfen (protege)."],
  ["Ackerbau","Anbau von Getreide und Gemüse auf Feldern."],
@@ -839,7 +846,6 @@ var LEXIKON=[
  ["Bauernhaus","Haus aus Holz und Lehm mit Strohdach; Hälfte Wohnung, Hälfte Stall; Herdstelle in der Mitte."],
  ["Bergfried","Höchster Turm einer Burg – letzter Zufluchtsort bei einem Angriff."],
  ["Besthaupt","Abgabe des besten Stücks Vieh beim Tod eines hörigen Bauern."],
- ["Bestkleid","Abgabe des besten Kleidungsstücks beim Tod eines hörigen Bauern."],
  ["Bischof","Hoher Geistlicher – oft auch Lehnsherr und Kronvasall des Königs."],
  ["Bogen","Waffe, mit der man lange Pfeile besonders weit schiessen kann."],
  ["Bronzezeit","Zeitalter, in dem Bronze (Kupfer + Zinn) verarbeitet wurde (ca. 2'200–800 v. Chr.)."],
@@ -859,7 +865,7 @@ var LEXIKON=[
  ["Felsburg","Burg auf hohem, schroffem Fels – meist nur eine Seite zugänglich."],
  ["Fliehburg (Fluchtburg)","Nicht dauerhaft bewohnte Befestigung als Rückzugsort bei Kriegsgefahr."],
  ["Frondienst","Arbeit der hörigen Bauern auf dem Herrenhof (bis zu 4 Tage pro Woche)."],
- ["Frühes Mittelalter","Erster Abschnitt des Mittelalters (ca. 500–1050 n. Chr.)."],
+ ["Frühmittelalter","Erster Abschnitt des Mittelalters (ca. 500–1050 n. Chr.)."],
  ["Germanen","Stämme in Nord- und Mitteleuropa, z. B. Franken, Sachsen, Goten, Vandalen, Angeln."],
  ["Graf","Hoher Adliger – Kronvasall des Königs."],
  ["Grabenburg","Burg in der Ebene mit Wassergraben."],
@@ -874,7 +880,6 @@ var LEXIKON=[
  ["Kettenhemd","Rüstungsteil aus vielen Eisenringen."],
  ["Kindersterblichkeit","Im Mittelalter starb etwa jedes zweite Kind vor dem Erwachsenenalter."],
  ["Klerus","Erster Stand: Papst, Bischöfe, Pfarrer, Mönche, Nonnen – mussten beten (ora)."],
- ["Kopfzins","Abgabe nach der Anzahl der Familienmitglieder."],
  ["Kronvasall","Direkter Vasall des Königs (Herzog, Graf, Bischof)."],
  ["Kreuzzug","Kriegszug christlicher Ritter ins Heilige Land (ab 1095)."],
  ["Lanze","3 m langer Speer mit Eisenspitze (zum Anreiten beim Tjost)."],
@@ -889,7 +894,7 @@ var LEXIKON=[
  ["Motte","Hölzerner Wohn- und Wehrturm auf einem aufgeschütteten Hügel mit Palisade."],
  ["Neuzeit","Epoche nach dem Mittelalter: frühe Neuzeit, neuere und neuste Geschichte."],
  ["Ostgoten / Westgoten","Germanische Stämme (Goten); plünderten 410 Rom bzw. gründeten Reiche in Italien und Spanien."],
- ["Page","Erste Stufe der Riterausbildung (ab 7 Jahren)."],
+ ["Page","Erste Stufe der Ritterausbildung (ab 7 Jahren)."],
  ["Palisade","Einfacher Holzzaun um eine Motte."],
  ["Palas","Herrenhaus auf der Burg mit Wohn- und Festsaal."],
  ["Papst","Oberhaupt der katholischen Kirche."],
@@ -918,7 +923,7 @@ var LEXIKON=[
  ["Vorratshaus","Lagerhaus auf der Burg für Lebensmittel und Vorräte."],
  ["Wappen","Familienzeichen auf dem Schild des Ritters."],
  ["Wasserburg","Burg mitten im Wasser (See), meist auf einer kleinen Insel."],
- ["Wehrgang","Überdachter Gang auf der Burgmauer."],
+ ["Wehrgang","Gang oben auf der Burgmauer (oft überdacht)."],
  ["Weiler","Kleine Siedlung auf dem Land."],
  ["Zehnt","Abgabe an die Kirche (etwa der zehnte Teil der Ernte)."],
  ["Zeitalter","Grösserer Zeitabschnitt der Geschichte (z. B. Mittelalter) – siehe Epoche."],
@@ -928,7 +933,6 @@ var LEXIKON=[
  ["Feldzehnt","Jährliche Abgabe: Getreide, Garten- und Baumfrüchte, Wein."],
  ["Blutzehnt","Jährliche Abgabe von Haustieren und tierischen Erzeugnissen (Milch, Eier, Butter, Honig, Wolle, Felle, Wachs)."],
  ["Kopfsteuer","Jährliche Abgabe nach der Anzahl der Familienmitglieder."],
- ["Besthaupt","Bestes Stück Vieh – Abgabe beim Tod eines hörigen Bauern."],
  ["Bestgewand","Bestes Kleidungsstück – Abgabe beim Tod eines hörigen Bauern."],
  ["Heiratserlaubnis","Abgabe, die Bauern für die Erlaubnis zur Heirat zahlen mussten."],
  ["Wohnburg","Burg, die vor allem dem Burgherrn als Wohnhaus diente (weniger gut geschützt)."],
@@ -953,7 +957,7 @@ var LEXIKON=[
 var PAGES=[
  ["start","🏠 Start"],["zeitalter","⏳ Zeitalter"],["voelker","🏹 Völkerwanderung"],["lehen","👑 Lehnswesen & Stände"],
  ["ritter","⚔️ Ritter"],["burg","🏰 Burg"],["land","🌾 Landleben"],["frauen","👩 Frauen"],["kinder","🧒 Kinder"],
- ["stadt","🏘️ Stadt & Zünfte"],["quiz","🎓 Prüfungs-Quiz"],["lexikon","📚 Fachbegriffe"],["korrekturen","📖 Korrekturen"]
+ ["stadt","🏘️ Stadt & Zünfte"],["quiz","🎓 Prüfungs-Quiz"],["probe","📝 Probeprüfung"],["lexikon","📚 Fachbegriffe"],["korrekturen","📖 Korrekturen"]
 ];
 function show(id){
   $$(".page").forEach(function(p){p.classList.toggle("active",p.id==="sec-"+id);});
@@ -1034,16 +1038,17 @@ function updateProgress(){
 /* ---------- Burg-Skizze ---------- */
 function selectBauteil(n,silent){
   var b=null; BAUTEILE.forEach(function(x){if(x.n===n)b=x;});
-  $$("#markers .marker").forEach(function(m){ m.classList.toggle("hl", +m.dataset.n===n); });
+  $$("#markers .marker").forEach(function(m){ m.classList.toggle("hl", +m.getAttribute("data-n")===n); });
   if(!silent && b){ var info=$("#burgInfo"); info.innerHTML="<strong>Nr. "+b.n+" – "+esc(b.name)+":</strong> "+esc(b.desc); }
 }
 (function buildCastle(){
-  var mg=$("#markers");
+  var NS="http://www.w3.org/2000/svg", mg=$("#markers");
   BAUTEILE.forEach(function(b){
-    var g=el("g","marker");
-    g.dataset.n=b.n;
+    var g=document.createElementNS(NS,"g"); g.setAttribute("class","marker"); g.setAttribute("data-n",b.n);
     g.setAttribute("transform","translate("+b.mx+","+b.my+")");
-    g.innerHTML='<circle r="12"></circle><text y="4">'+b.n+'</text>';
+    var c=document.createElementNS(NS,"circle"); c.setAttribute("r","12");
+    var t=document.createElementNS(NS,"text"); t.setAttribute("y","4"); t.textContent=b.n;
+    g.appendChild(c); g.appendChild(t);
     g.onclick=function(){ selectBauteil(b.n,false); };
     mg.appendChild(g);
   });
@@ -1150,7 +1155,7 @@ function mountQuiz(qid,mount){
         else { row.classList.add("bad"); row.classList.remove("ok"); allOk=false; }
       });
       if(allOk){ mark(); fb.className="quiz-fb good"; fb.innerHTML="✅ Richtig! Alle Zuordnungen stimmen."; nextBtn(); }
-      else fb.className="quiz-fb bad"; fb.innerHTML="❌ Einige Zuordnungen stimmen noch nicht – verbessere sie und prüfe erneut!";
+      else { fb.className="quiz-fb bad"; fb.innerHTML="❌ Einige Zuordnungen stimmen noch nicht – verbessere sie und prüfe erneut!"; }
     },"primary"));
   }
   function renderText(q){
@@ -1193,7 +1198,7 @@ renderLexikon("");
 /* ---------- Korrekturen ---------- */
 (function renderKorrekturen(){
   var kl=$("#korrList");
-  var t=el("table","korr","<tr><th>So stand es (falsch/unleserlich) im Heft</th><th>Korrekt</th></tr>");
+  var t=el("table","korr","<tr><th>Stelle im Heft</th><th>Besser / richtig</th></tr>");
   KORREKTUREN.forEach(function(k){
     var tr=document.createElement("tr");
     tr.innerHTML='<td class="wrong-txt">'+esc(k[0])+'</td><td class="right-txt">'+esc(k[1])+'</td>';
@@ -1204,6 +1209,27 @@ renderLexikon("");
   UNREADABLE.forEach(function(u){ ul.appendChild(el("li","",esc(u))); });
 })();
 
+var PROBE=[[1, 3, "Bringe in die richtige Reihenfolge (ältestes zuerst): Spätmittelalter, Bronzezeit, Frühmittelalter, Altsteinzeit, Eisenzeit, Hochmittelalter.", "Altsteinzeit, Bronzezeit, Eisenzeit, Frühmittelalter, Hochmittelalter, Spätmittelalter (je 0.5 P)."], [2, 2, "Nenne 2 Gründe für die Völkerwanderung.", "z. B. Bevölkerungswachstum, Hungersnot, vordringende Hunnen, Aussicht auf ein besseres Leben, Klima (je 1 P)."], [3, 3, "Ordne in der Lehnspyramide von oben nach unten: Abhängige, Untervasallen, König, Kronvasallen. Nenne je ein Beispiel.", "König – Kronvasallen (z. B. Herzog, Graf, Bischof) – Untervasallen (z. B. Ritter, Vogt) – Abhängige (z. B. Bauern, Knechte). Reihenfolge 1 P, Beispiele 2 P."], [4, 2, "Was gibt der Lehnsherr dem Vasallen, was leistet der Vasall?", "Lehnsherr: Land (Lehen), Ämter, Schutz. Vasall: Treue («Gefolgschaft») und Kriegsdienst (je 1 P)."], [5, 3, "Nenne 3 Dinge, die ein Knappe in der Ausbildung zum Ritter lernen musste.", "z. B. Pferde versorgen, Waffen putzen, reiten, fechten, Umgang mit Lanze und Schwert (je 1 P)."], [6, 3, "Wie heissen diese Waffen? a) Eisenkugel mit Dornen am Stiel, b) schiesst kurze Pfeile, c) Hauptwaffe des Ritters, d) ca. 3 m langer Holzschaft mit Eisenspitze, e) Holzstiel mit schwerer Eisenklinge, f) Abwehrwaffe mit Familienwappen.", "a Morgenstern, b Armbrust, c Schwert, d Lanze, e Streitaxt, f Schild (je 0.5 P)."], [7, 3, "Nenne 3 Burgtypen und je einen Vorteil.", "z. B. Höhenburg: schwer einzunehmen, guter Überblick; Felsburg: nur von einer Seite zugänglich; Wasserburg: Wasser ringsum; Motte: schnell gebaut; Fliehburg: Zuflucht der Bevölkerung (je 1 P)."], [8, 2, "Erkläre: Palas, Bergfried, Kemenate, Pechnase.", "Palas: Herrenhaus mit Rittersaal; Bergfried: Hauptturm, letzter Zufluchtsort; Kemenate: beheizbarer Frauenraum; Pechnase: Öffnung, um Pech auf Angreifer zu giessen (je 0.5 P)."], [9, 3, "Nenne 3 Beispiele, die zeigen, dass das Burgleben nicht einfach war.", "z. B. kalter Winter, einseitige Ernährung, harte Arbeit, Dunkelheit, Krieg und Belagerung (je 1 P)."], [10, 3, "Wie lebten die Menschen auf dem Land? Nenne je 1 Beispiel zu Wohnen, Arbeiten und Essen.", "Wohnen: Holz-/Lehmhaus mit Strohdach; Arbeiten: Feld- und Erntearbeit, Viehhaltung; Essen: Brei, Brot, Kohl, Rüben (je 1 P)."], [11, 3, "Nenne 3 Unterschiede zwischen Kindern im Mittelalter und heute.", "z. B. früher Mitarbeit und wenig Freizeit, meist keine Schule, früh erwachsen (Mädchen 12, Jungen 14); heute Schulpflicht, mehr Freizeit (je 1 P)."], [12, 2, "Nenne 2 Beispiele, dass Frauen nicht gleichgestellt waren.", "z. B. keine politische Mitbestimmung, kein Universitätsbesuch, Gehorsam gegenüber dem Mann, meist keine Bildung (je 1 P)."], [13, 2, "Nenne 5 typische Gebäude oder Einrichtungen einer mittelalterlichen Stadt.", "z. B. Stadtmauer, Stadttor, Rathaus, Marktplatz, Kirche, Zunfthaus, Brunnen (5 richtige = 2 P, 3–4 richtige = 1 P)."], [14, 2, "Nenne 2 Bevölkerungsgruppen der Stadt mit je einem Merkmal.", "z. B. Patrizier: reiche Kaufleute; Handwerker: in Zünften organisiert; Unterschicht: Tagelöhner, Mägde (je 1 P)."], [15, 1, "Erkläre in eigenen Worten: Was ist eine Epoche?", "Ein Abschnitt der Geschichte, der mit einem wichtigen Ereignis beginnt und endet (1 P)."], [16, 2, "Was bedeutet «Völkerwanderung»? Waren ganze Völker unterwegs?", "Viele Gruppen verliessen ihre Gebiete und zogen durch Europa (1 P). Nein, es waren verschiedene Gruppen und Kriegerverbände, die sich zusammenschlossen (1 P)."], [17, 3, "Was ist die Ständeordnung? Nenne die 3 Stände mit ihrer Hauptaufgabe.", "Einteilung in Gruppen, in die man hineingeboren wurde (1 P). Klerus: beten, Adel: schützen, Bauern: arbeiten (2 P)."], [18, 3, "Was unterscheidet freie Bauern, Hörige und Leibeigene?", "Frei: eigenes Land, Kriegsdienst. Hörig: gepachteter Hof, Abgaben und Frondienste. Leibeigen: ganz abhängig, kein Besitz (je 1 P)."], [19, 2, "Erkläre, was eine Eheschliessung im Mittelalter bedeutete.", "z. B. oft früh und von den Familien arrangiert; die Frau musste dem Mann gehorchen; Hörige brauchten eine Heiratserlaubnis; die Kirche segnete die Ehe (je 1 P, max. 2 P)."], [20, 3, "Nenne 3 Funktionen von Zünften.", "Qualität sichern, Preise festlegen, Ausbildung regeln, Hilfe in Not, Vertretung in der Stadt (je 1 P)."]];
+(function(){
+  var box=$("#probe"),h="";
+  PROBE.forEach(function(x,i){
+    var o="";for(var j=0;j<=x[1]*2;j++)o+="<option>"+(j/2)+"</option>";
+    h+='<div class="note"><strong>LZ '+x[0]+' · Frage '+(i+1)+'</strong> ('+x[1]+' Punkte)<br>'+esc(x[2])+'<br><textarea rows="2" style="width:100%;margin-top:6px"></textarea><details><summary>Lösung anzeigen</summary>'+esc(x[3])+'</details><label>Erreichte Punkte: <select class="pt">'+o+'</select></label></div>';
+  });
+  h+='<button class="btn primary" id="probeEval">Prüfung auswerten</button><div id="probeRes"></div>';
+  box.innerHTML=h;
+  var tm;$("#probeTimer").onclick=function(){clearInterval(tm);var t=2400;function f(){$("#probeTime").textContent=Math.floor(t/60)+":"+("0"+t%60).slice(-2);if(t--<=0){clearInterval(tm);$("#probeTime").textContent="⏰ Zeit abgelaufen!";}}f();tm=setInterval(f,1000);};
+  $("#probeEval").onclick=function(){var p=0;$$("#probe .pt").forEach(function(x){p+=+x.value;});var n=Math.round((1+p/10)*2)/2,b=Math.max(store.get("ma_best_probe",0),p);store.set("ma_best_probe",b);$("#probeRes").innerHTML='<div class="quiz-fb good"><strong>'+p+' von 50 Punkten – Note '+n+'</strong> (genau '+(1+p/10).toFixed(1)+')<br>Beste Probeprüfung bisher: '+b+' Punkte</div>';};
+})();
+(function(){
+  var T=LEXIKON.filter(function(x){return /^[A-Za-zÄÖÜäöüß]+$/.test(x[0]);}),box=$("#schrTrain"),cur=null,sc=[0,0],done=false;
+  function next(){cur=T[Math.floor(Math.random()*T.length)];done=false;
+    box.innerHTML='<p class="note">Wie heisst der Begriff? <strong>'+esc(cur[1])+'</strong> ('+cur[0].length+' Buchstaben)</p><input id="stIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Begriff schreiben" style="width:100%;padding:8px;font-size:1rem"><p><button class="btn primary" id="stOk">Prüfen</button> <span id="stFb"></span></p><small>Richtig geschrieben: '+sc[0]+' von '+sc[1]+'</small>';
+    $("#stOk").onclick=chk;$("#stIn").onkeydown=function(e){if(e.key==="Enter")chk();};}
+  function chk(){if(done)return;done=true;var v=$("#stIn").value.trim(),ok=v===cur[0];sc[1]++;if(ok)sc[0]++;
+    $("#stFb").innerHTML=(ok?"✅ Richtig!":(v.toLowerCase()===cur[0].toLowerCase()?"Fast – Gross-/Kleinschreibung: ":"❌ Richtig geschrieben: ")+"<strong>"+esc(cur[0])+"</strong>")+' <button class="btn" id="stNx">Nächster Begriff</button>';$("#stNx").onclick=next;}
+  next();
+})();
 /* ---------- Start ---------- */
 renderLernziele();
 updateProgress();
